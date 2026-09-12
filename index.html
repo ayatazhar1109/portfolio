@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayat Azhar | Cybersecurity Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+            border-bottom: 3px solid #00bcd4;
+        }
+        header h1 {
+            font-size: 3em;
+            color: #00bcd4;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        header p { font-size: 1.2em; color: #8b949e; }
+        .badge {
+            display: inline-block;
+            background: #00bcd4;
+            color: #0d1117;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        section { margin-bottom: 50px; }
+        h2 {
+            color: #00bcd4;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-left: 4px solid #00bcd4;
+            padding-left: 15px;
+        }
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background: #161b22;
+            border: 1px solid #30363d;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.95em;
+        }
+        .project-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-left: 6px solid #00bcd4;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 188, 212, 0.2);
+        }
+        .project-card h3 {
+            color: #f0f6fc;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+        .project-card p { color: #8b949e; margin-bottom: 15px; }
+        .project-links a {
+            display: inline-block;
+            background: #00bcd4;
+            color: #0d1117;
+            padding: 8px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-top: 5px;
+            transition: background 0.2s;
+        }
+        .project-links a:hover { background: #00acc1; }
+        .project-links a.secondary {
+            background: transparent;
+            border: 2px solid #00bcd4;
+            color: #00bcd4;
+        }
+        .project-links a.secondary:hover { background: #00bcd4; color: #0d1117; }
+        .tech-list {
+            margin: 10px 0 15px 0;
+            font-size: 0.9em;
+            color: #00bcd4;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+            font-size: 0.9em;
+        }
+        footer a { color: #00bcd4; text-decoration: none; }
+        .contact-links { text-align: center; margin-top: 20px; }
+        .contact-links a {
+            color: #00bcd4;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .contact-links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ayat Azhar</h1>
+        <p>Cybersecurity Student | Full-Stack Developer | AI Enthusiast</p>
+        <div class="badge">Bano Qabil Graduate</div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>👤 About Me</h2>
+            <p>
+                I am a passionate cybersecurity student from <strong>Bano Qabil</strong> with a strong interest in 
+                AI-driven security automation. I specialize in building full-stack Python applications that solve 
+                real-world problems, including automated threat detection, log analysis, and incident response. 
+                My work focuses on combining modern web technologies with cybersecurity frameworks like 
+                <strong>MITRE ATT&CK</strong> to build practical, deployable solutions.
+            </p>
+        </section>
+
+        <section>
+            <h2>🛠️ Skills & Technologies</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Cybersecurity</span>
+                <span class="skill-tag">MITRE ATT&CK</span>
+                <span class="skill-tag">Threat Intelligence</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Railway Deployment</span>
+                <span class="skill-tag">Threading</span>
+                <span class="skill-tag">SIEM Concepts</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>🚀 Projects</h2>
+
+            <div class="project-card">
+                <h3>AI Cybersecurity SOC Agent</h3>
+                <div class="tech-list">Python • Flask • HTML • CSS • JavaScript • MITRE ATT&CK • Railway</div>
+                <p>
+                    A full-stack web application that automates threat detection and reduces alert fatigue for 
+                    Security Operations Center (SOC) analysts. The system uses a 5-stage AI pipeline 
+                    (Log Analysis → Threat Detection → Threat Intelligence → Risk Assessment → Incident Response) 
+                    to analyze security logs in real-time. It features a Human-in-the-Loop architecture that 
+                    requires analyst approval before executing block actions. The dashboard displays live alerts, 
+                    an incident summary, and the MITRE ATT&CK mapping for each detected threat.
+                </p>
+                <div class="project-links">
+                    <a href="https://stellar-playfulness-production-58f5.up.railway.app" target="_blank">🌐 Live Demo</a>
+                    <a href="https://github.com/ayatazhar1109/soc-agent-project" target="_blank" class="secondary">💻 Source Code</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>📬 Contact</h2>
+            <div class="contact-links">
+                <a href="https://github.com/ayatazhar1109" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+                <a href="mailto:your-email@example.com">Email</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Ayat Azhar | Built with ❤️ and hosted on GitHub Pages</p>
+    </footer>
+</body>
+</html>
