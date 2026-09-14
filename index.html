@@ -6,115 +6,29 @@
     <title>Ayat Azhar | Cybersecurity & AI Portfolio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0d1117;
-            color: #e6edf3;
-            line-height: 1.6;
-        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0d1117; color: #e6edf3; line-height: 1.6; }
         .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
-            border-bottom: 3px solid #00bcd4;
-        }
-        header h1 {
-            font-size: 3em;
-            color: #00bcd4;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
+        header { text-align: center; padding: 60px 20px; background: linear-gradient(135deg, #0d1117 0%, #161b22 100%); border-bottom: 3px solid #00bcd4; }
+        header h1 { font-size: 3em; color: #00bcd4; margin-bottom: 10px; letter-spacing: 1px; }
         header p { font-size: 1.2em; color: #8b949e; }
-        .badge {
-            display: inline-block;
-            background: #00bcd4;
-            color: #0d1117;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            font-weight: bold;
-            margin-top: 15px;
-        }
+        .badge { display: inline-block; background: #00bcd4; color: #0d1117; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; margin-top: 15px; }
         section { margin-bottom: 50px; }
-        h2 {
-            color: #00bcd4;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            border-left: 4px solid #00bcd4;
-            padding-left: 15px;
-        }
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill-tag {
-            background: #161b22;
-            border: 1px solid #30363d;
-            padding: 8px 16px;
-            border-radius: 6px;
-            font-size: 0.95em;
-        }
-        .project-card {
-            background: #161b22;
-            border: 1px solid #30363d;
-            border-left: 6px solid #00bcd4;
-            border-radius: 8px;
-            padding: 25px;
-            margin-bottom: 20px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .project-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 188, 212, 0.2);
-        }
-        .project-card h3 {
-            color: #f0f6fc;
-            font-size: 1.4em;
-            margin-bottom: 10px;
-        }
+        h2 { color: #00bcd4; font-size: 1.8em; margin-bottom: 20px; border-left: 4px solid #00bcd4; padding-left: 15px; }
+        .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-tag { background: #161b22; border: 1px solid #30363d; padding: 8px 16px; border-radius: 6px; font-size: 0.95em; }
+        .project-card { background: #161b22; border: 1px solid #30363d; border-left: 6px solid #00bcd4; border-radius: 8px; padding: 25px; margin-bottom: 20px; transition: transform 0.2s, box-shadow 0.2s; }
+        .project-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0, 188, 212, 0.2); }
+        .project-card h3 { color: #f0f6fc; font-size: 1.4em; margin-bottom: 10px; }
         .project-card p { color: #8b949e; margin-bottom: 15px; }
-        .project-links a {
-            display: inline-block;
-            background: #00bcd4;
-            color: #0d1117;
-            padding: 8px 18px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-right: 10px;
-            margin-top: 5px;
-            transition: background 0.2s;
-        }
+        .project-links a { display: inline-block; background: #00bcd4; color: #0d1117; padding: 8px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-right: 10px; margin-top: 5px; transition: background 0.2s; }
         .project-links a:hover { background: #00acc1; }
-        .project-links a.secondary {
-            background: transparent;
-            border: 2px solid #00bcd4;
-            color: #00bcd4;
-        }
+        .project-links a.secondary { background: transparent; border: 2px solid #00bcd4; color: #00bcd4; }
         .project-links a.secondary:hover { background: #00bcd4; color: #0d1117; }
-        .tech-list {
-            margin: 10px 0 15px 0;
-            font-size: 0.9em;
-            color: #00bcd4;
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
-            border-top: 1px solid #30363d;
-            color: #8b949e;
-            font-size: 0.9em;
-        }
+        .tech-list { margin: 10px 0 15px 0; font-size: 0.9em; color: #00bcd4; }
+        footer { text-align: center; padding: 30px; border-top: 1px solid #30363d; color: #8b949e; font-size: 0.9em; }
         footer a { color: #00bcd4; text-decoration: none; }
         .contact-links { text-align: center; margin-top: 20px; }
-        .contact-links a {
-            color: #00bcd4;
-            text-decoration: none;
-            font-size: 1.1em;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+        .contact-links a { color: #00bcd4; text-decoration: none; font-size: 1.1em; margin: 0 15px; font-weight: bold; }
         .contact-links a:hover { text-decoration: underline; }
     </style>
 </head>
@@ -131,9 +45,10 @@
             <p>
                 I am a Cybersecurity and Generative AI professional from <strong>Bano Qabil</strong>, with hands-on 
                 experience in penetration testing, vulnerability assessment, and AI model development. 
-                I specialize in building intelligent security tools that combine <strong>Machine Learning, 
-                Deep Learning, and NLP</strong> with frameworks like <strong>MITRE ATT&CK</strong>. 
-                My goal is to use AI to make security work faster, smarter, and more accessible.
+                I built <strong>PhishGuard Pro</strong>, a phishing detection tool with 95% accuracy that was 
+                published on Zenodo, and deployed an <strong>AI Cybersecurity SOC Agent</strong> to the cloud. 
+                My work combines Machine Learning, Deep Learning, and NLP with frameworks like 
+                <strong>MITRE ATT&CK</strong> to build intelligent, automated defense systems.
             </p>
         </section>
 
@@ -152,6 +67,9 @@
                 <span class="skill-tag">OWASP ZAP</span>
                 <span class="skill-tag">Nmap</span>
                 <span class="skill-tag">Wireshark</span>
+                <span class="skill-tag">Metasploit</span>
+                <span class="skill-tag">SSL/TLS</span>
+                <span class="skill-tag">DNS & WHOIS</span>
                 <span class="skill-tag">Machine Learning</span>
                 <span class="skill-tag">Deep Learning</span>
                 <span class="skill-tag">NLP</span>
@@ -167,6 +85,22 @@
 
         <section>
             <h2>🚀 Projects</h2>
+
+            <div class="project-card">
+                <h3>PhishGuard Pro — Real-Time Phishing Detection System</h3>
+                <div class="tech-list">Python • SSL • DNS • WHOIS • Real-Time Detection • Published on Zenodo</div>
+                <p>
+                    A Python-based tool that detects fake websites in real time with <strong>95% accuracy</strong>. 
+                    It performs 16 phishing checks including typosquatting, suspicious TLDs, double-domain tricks, 
+                    URL shorteners, and missing HTTPS. The system includes SSL validation, DNS lookup, WHOIS lookup, 
+                    HTTP header analysis, URL expansion, and batch scanning of 50+ URLs at once. Achieved 96% accuracy 
+                    on legitimate sites and 94% on phishing sites across 100 test URLs, with a 2–3 second response time. 
+                    Published as open-access research on Zenodo (July 2026).
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/ayatazhar1109/PhishGuard-Code" target="_blank" class="secondary">💻 Source Code</a>
+                </div>
+            </div>
 
             <div class="project-card">
                 <h3>AI Cybersecurity SOC Agent</h3>
@@ -186,22 +120,6 @@
                 </div>
             </div>
 
-            <div class="project-card">
-                <h3>Phish Guard PRO</h3>
-                <div class="tech-list">Python • Real-Time Phishing Detection • SSL/DNS/WHOIS Lookup</div>
-                <p>
-                    A real-time phishing detection system built with Python. It helps users identify fake websites 
-                    before they enter passwords or personal information. It scans URLs and returns a risk score 
-                    from 0% to 100% based on detected red flags, including typosquatting, suspicious TLDs (.xyz, .tk, .ml), 
-                    double domain tricks, missing HTTPS, and URL shorteners. The system achieved 96% accuracy 
-                    on legitimate sites and 94% on phishing sites, with a 2-3 second response time, and supports 
-                    scanning 50+ URLs at once from a single text file.
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/ayatazhar1109/PhishGuard-Pro-Intelligent-Real-Time-Phishing-Detection-System" target="_blank" class="secondary">💻 Source Code</a>
-                </div>
-            </div>
-
         </section>
 
         <section>
@@ -218,6 +136,13 @@
                 <p>
                     Covered Machine Learning, Deep Learning, NLP, Large Language Models (LLMs), prompt engineering, 
                     and AI model development using Python, TensorFlow, and Scikit-learn.
+                </p>
+            </div>
+            <div class="project-card">
+                <h3>Google AI Essentials — Google & Coursera</h3>
+                <p>
+                    Completed Google's foundational AI course covering AI concepts, responsible AI, 
+                    and practical AI applications in the workplace.
                 </p>
             </div>
         </section>
