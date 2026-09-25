@@ -4,113 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ayat Azhar — Cybersecurity and Generative AI student. Projects: PhishGuard Pro, AI Cybersecurity SOC Agent." />
-    <link rel="icon" href="favicon.ico" />
     <title>Ayat Azhar | Cybersecurity & AI Portfolio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0a0e14; color: #e6edf3; line-height: 1.6; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-
-        /* Navigation */
-        nav { position: sticky; top: 0; background: rgba(10, 14, 20, 0.95); border-bottom: 1px solid #30363d; padding: 15px 0; z-index: 100; backdrop-filter: blur(10px); }
-        nav .container { display: flex; justify-content: space-between; align-items: center; }
-        nav .logo { font-size: 1.2em; font-weight: bold; color: #00bcd4; }
-        nav ul { display: flex; gap: 25px; list-style: none; }
-        nav ul a { color: #e6edf3; text-decoration: none; font-size: 0.95em; transition: color 0.2s; }
-        nav ul a:hover { color: #00bcd4; }
-
-        /* Hero */
-        header { text-align: center; padding: 80px 20px; background: linear-gradient(135deg, #0a0e14 0%, #161b22 100%); border-bottom: 3px solid #00bcd4; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0d1117; color: #e6edf3; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; padding: 60px 20px; background: linear-gradient(135deg, #0d1117 0%, #161b22 100%); border-bottom: 3px solid #00bcd4; }
         header h1 { font-size: 3em; color: #00bcd4; margin-bottom: 10px; letter-spacing: 1px; }
-        header p { font-size: 1.2em; color: #8b949e; margin-bottom: 20px; }
-        .badge { display: inline-block; background: #00bcd4; color: #0a0e14; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; margin-bottom: 20px; }
-        .badge-available { display: inline-block; background: #4caf50; color: #0a0e14; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; margin-bottom: 20px; }
-        .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 25px; }
-        .hero-buttons a { display: inline-block; padding: 12px 28px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: all 0.2s; }
-        .btn-primary { background: #00bcd4; color: #0a0e14; }
-        .btn-primary:hover { background: #00acc1; transform: translateY(-2px); }
-        .btn-secondary { background: transparent; border: 2px solid #00bcd4; color: #00bcd4; }
-        .btn-secondary:hover { background: #00bcd4; color: #0a0e14; }
-
-        /* Sections */
-        section { padding: 60px 0; }
-        h2 { color: #00bcd4; font-size: 1.8em; margin-bottom: 25px; border-left: 4px solid #00bcd4; padding-left: 15px; }
-
-        /* Skills */
-        .skills-subheading { color: #f0f6fc; font-size: 1.1em; margin: 20px 0 10px 0; font-weight: bold; }
+        header p { font-size: 1.2em; color: #8b949e; }
+        .badge { display: inline-block; background: #00bcd4; color: #0d1117; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; margin-top: 15px; }
+        section { margin-bottom: 50px; }
+        h2 { color: #00bcd4; font-size: 1.8em; margin-bottom: 20px; border-left: 4px solid #00bcd4; padding-left: 15px; }
         .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
         .skill-tag { background: #161b22; border: 1px solid #30363d; padding: 8px 16px; border-radius: 6px; font-size: 0.95em; }
-
-        /* Projects */
-        .project-card { background: #161b22; border: 1px solid #30363d; border-left: 6px solid #00bcd4; border-radius: 8px; padding: 25px; margin-bottom: 25px; transition: transform 0.2s, box-shadow 0.2s; }
+        .project-card { background: #161b22; border: 1px solid #30363d; border-left: 6px solid #00bcd4; border-radius: 8px; padding: 25px; margin-bottom: 20px; transition: transform 0.2s, box-shadow 0.2s; }
         .project-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0, 188, 212, 0.2); }
         .project-card h3 { color: #f0f6fc; font-size: 1.4em; margin-bottom: 10px; }
         .project-card p { color: #8b949e; margin-bottom: 15px; }
-        .project-card img { width: 100%; border-radius: 6px; margin-bottom: 15px; border: 1px solid #30363d; }
-        .project-links a { display: inline-block; background: #00bcd4; color: #0a0e14; padding: 8px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-right: 10px; margin-top: 5px; transition: background 0.2s; }
+        .project-links a { display: inline-block; background: #00bcd4; color: #0d1117; padding: 8px 18px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-right: 10px; margin-top: 5px; transition: background 0.2s; }
         .project-links a:hover { background: #00acc1; }
         .project-links a.secondary { background: transparent; border: 2px solid #00bcd4; color: #00bcd4; }
-        .project-links a.secondary:hover { background: #00bcd4; color: #0a0e14; }
+        .project-links a.secondary:hover { background: #00bcd4; color: #0d1117; }
         .tech-list { margin: 10px 0 15px 0; font-size: 0.9em; color: #00bcd4; }
-
-        /* Timeline */
-        .timeline { position: relative; padding-left: 30px; border-left: 2px solid #30363d; margin-left: 10px; }
-        .timeline-item { position: relative; margin-bottom: 30px; }
-        .timeline-item::before { content: ''; position: absolute; left: -38px; top: 5px; width: 12px; height: 12px; border-radius: 50%; background: #00bcd4; border: 3px solid #0a0e14; }
-        .timeline-year { color: #00bcd4; font-weight: bold; font-size: 0.95em; }
-        .timeline-text { color: #8b949e; }
-
-        /* GitHub Stats */
-        .github-stats { text-align: center; margin-top: 20px; }
-        .github-stats img { max-width: 100%; border-radius: 8px; }
-
-        /* Footer */
-        footer { text-align: center; padding: 40px 20px; border-top: 1px solid #30363d; color: #8b949e; font-size: 0.9em; }
-        .social-icons { display: flex; justify-content: center; gap: 25px; margin-bottom: 20px; }
-        .social-icons a { color: #00bcd4; text-decoration: none; font-size: 1.1em; font-weight: bold; transition: color 0.2s; }
-        .social-icons a:hover { color: #00acc1; }
+        footer { text-align: center; padding: 30px; border-top: 1px solid #30363d; color: #8b949e; font-size: 0.9em; }
         footer a { color: #00bcd4; text-decoration: none; }
-
-        /* Mobile */
-        @media (max-width: 600px) {
-            header h1 { font-size: 2em; }
-            nav ul { gap: 15px; font-size: 0.85em; }
-            h2 { font-size: 1.5em; }
-        }
+        .contact-links { text-align: center; margin-top: 20px; }
+        .contact-links a { color: #00bcd4; text-decoration: none; font-size: 1.1em; margin: 0 15px; font-weight: bold; }
+        .contact-links a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <div class="logo">AA</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero -->
-    <header id="home">
-        <div class="badge">Bano Qabil Graduate</div>
+    <header>
         <h1>Ayat Azhar</h1>
         <p>Cybersecurity Student | AI & Full-Stack Developer</p>
-        <div class="badge-available">🟢 Available for Internships</div>
-        <div class="hero-buttons">
-            <a href="#projects" class="btn-primary">View Projects</a>
-            <a href="resume.pdf" target="_blank" class="btn-secondary">📄 Download Resume</a>
-        </div>
+        <div class="badge">Bano Qabil Graduate</div>
     </header>
 
     <div class="container">
-
-        <!-- About -->
-        <section id="about">
+        <section>
             <h2>👤 About Me</h2>
             <p>
                 I am a Cybersecurity and Generative AI student from <strong>Bano Qabil</strong>, with hands-on 
@@ -122,24 +53,21 @@
             </p>
         </section>
 
-        <!-- Skills -->
-        <section id="skills">
+        <section>
             <h2>🛠️ Skills & Technologies</h2>
-
-            <div class="skills-subheading">Security</div>
             <div class="skills-grid">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Cybersecurity</span>
                 <span class="skill-tag">Penetration Testing</span>
                 <span class="skill-tag">Vulnerability Assessment</span>
                 <span class="skill-tag">Kali Linux</span>
                 <span class="skill-tag">OWASP ZAP</span>
                 <span class="skill-tag">Nmap</span>
                 <span class="skill-tag">Wireshark</span>
-                <span class="skill-tag">Metasploit</span>
-                <span class="skill-tag">MITRE ATT&CK</span>
-            </div>
-
-            <div class="skills-subheading">AI & ML</div>
-            <div class="skills-grid">
                 <span class="skill-tag">Machine Learning</span>
                 <span class="skill-tag">Deep Learning</span>
                 <span class="skill-tag">NLP</span>
@@ -147,28 +75,18 @@
                 <span class="skill-tag">Prompt Engineering</span>
                 <span class="skill-tag">TensorFlow</span>
                 <span class="skill-tag">Scikit-learn</span>
-            </div>
-
-            <div class="skills-subheading">Development</div>
-            <div class="skills-grid">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">Flask</span>
-                <span class="skill-tag">HTML</span>
-                <span class="skill-tag">CSS</span>
-                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">MITRE ATT&CK</span>
                 <span class="skill-tag">Git & GitHub</span>
                 <span class="skill-tag">Railway</span>
             </div>
         </section>
 
-        <!-- Projects -->
-        <section id="projects">
+        <section>
             <h2>🚀 Projects</h2>
 
             <div class="project-card">
-                <h3>PhishGuard Pro — Real-Time Phishing Detection</h3>
+                <h3>PhishGuard Pro — Real-Time Phishing Detection System</h3>
                 <div class="tech-list">Python • SSL • DNS • WHOIS • Published on Zenodo</div>
-                <img src="phishguard-screenshot.png" alt="PhishGuard Pro Screenshot" />
                 <p>
                     A Python-based tool that detects fake websites in real time with <strong>95% accuracy</strong>. 
                     It performs 16 phishing checks including typosquatting, suspicious TLDs, double-domain tricks, 
@@ -183,8 +101,7 @@
 
             <div class="project-card">
                 <h3>AI Cybersecurity SOC Agent</h3>
-                <div class="tech-list">Python • Flask • JavaScript • MITRE ATT&CK • Railway</div>
-                <img src="soc-agent-screenshot.png" alt="SOC Agent Dashboard Screenshot" />
+                <div class="tech-list">Python • Flask • HTML • CSS • JavaScript • MITRE ATT&CK • Railway</div>
                 <p>
                     A full-stack web application that automates threat detection and reduces alert fatigue for 
                     SOC analysts. Uses a 5-stage AI pipeline (Log Analysis → Threat Detection → Threat Intelligence 
@@ -200,35 +117,7 @@
             </div>
         </section>
 
-        <!-- Timeline -->
-        <section id="timeline">
-            <h2>📅 My Journey</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-year">2025</div>
-                    <div class="timeline-text">Started learning cybersecurity fundamentals</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2026</div>
-                    <div class="timeline-text">Completed Cybersecurity & Generative AI courses at Bano Qabil</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2026</div>
-                    <div class="timeline-text">Built and published PhishGuard Pro on Zenodo</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2026</div>
-                    <div class="timeline-text">Started internship at DevelopersHub Corporation</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2026</div>
-                    <div class="timeline-text">Deployed AI Cybersecurity SOC Agent live on Railway</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications -->
-        <section id="certifications">
+        <section>
             <h2>📚 Certifications</h2>
             <div class="project-card">
                 <h3>Cybersecurity — Bano Qabil</h3>
@@ -244,26 +133,18 @@
             </div>
         </section>
 
-        <!-- GitHub Stats -->
-        <section id="github">
-            <h2>📊 GitHub Activity</h2>
-            <div class="github-stats">
-                <img src="https://github-readme-stats.vercel.app/api?username=ayatazhar1109&show_icons=true&theme=dark&bg_color=0a0e14&title_color=00bcd4&icon_color=00bcd4&text_color=e6edf3&border_color=30363d" alt="GitHub Stats" />
+        <section>
+            <h2>📬 Contact</h2>
+            <div class="contact-links">
+                <a href="https://github.com/ayatazhar1109" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/ayat-azhar-146801345/" target="_blank">LinkedIn</a>
+                <a href="mailto:ayatazhar1109@gmail.com">Email</a>
             </div>
         </section>
-
     </div>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="social-icons">
-            <a href="https://github.com/ayatazhar1109" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/ayat-azhar-146801345/" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/security.ayat" target="_blank">Instagram</a>
-            <a href="mailto:ayatazhar1109@gmail.com">Email</a>
-        </div>
+    <footer>
         <p>© 2026 Ayat Azhar | Hosted on GitHub Pages</p>
     </footer>
-
 </body>
 </html>
